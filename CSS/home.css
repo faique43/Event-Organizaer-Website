@@ -1,0 +1,374 @@
+/* 
+=========================================================================================================================================================================
+                                                                            CSS Reset                
+=========================================================================================================================================================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* 
+=========================================================================================================================================================================
+                                                                            Navbar                
+=========================================================================================================================================================================
+*/
+
+#navbar{
+    height: 100px;
+    background-color: white;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar ul li{
+    margin: 0px 10px;
+    box-sizing: border-box;
+}
+
+.border{
+    margin: 0px 10px;
+    box-sizing: border-box;
+}
+
+.border a{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 36px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar ul li a img{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 80px;
+    width: auto;
+    margin: 5px 30px;
+    padding: 0  ;
+
+}
+
+.border::after{
+    display: block;
+    content: "";
+    border-bottom: 3px solid black;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.border:hover::after{
+    transform: scaleX(1);
+}
+
+/* 
+=========================================================================================================================================================================
+                                                                                   Home               
+=========================================================================================================================================================================
+*/
+
+#home-main::before{
+    content: "";
+    position: absolute;
+    background: url("/Images/Backgrounds/bg1.jpg") center / cover no-repeat;
+    top: 0;
+    left: 0;
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home-main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-main img{
+    height: 280px;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+#home-main .btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 15px 25px;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+#home-main .btn:hover{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: white;
+}
+
+/* 
+=========================================================================================================================================================================
+                                                                                  Market               
+=========================================================================================================================================================================
+*/
+
+#market{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 80vh; */
+    padding: 100px 200px;
+    background-color: rgb(239, 239, 239);
+    z-index: -2;
+}
+
+#market h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#market h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+.para{
+    padding: 10px;
+    text-align: center;
+    color: grey;
+}
+
+#market .btn{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
+    padding: 15px 25px;
+    outline: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+#market .btn:hover{
+    background-color: grey;
+    color: black;
+}
+
+/* 
+=========================================================================================================================================================================
+                                                                                  Events               
+=========================================================================================================================================================================
+*/
+
+#events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 10px;
+}
+
+#event-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 360px;
+}
+
+.event img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.event p{
+    margin: 20px 15px;
+    margin-top: 40px;
+    color: gray;
+    text-align: center;
+}
+
+.event h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin: 15px auto;
+    font-weight: bold;
+}
+
+#events h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+/* 
+=========================================================================================================================================================================
+                                                                                Testimonials               
+=========================================================================================================================================================================
+*/
+
+#testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(239, 239, 239);
+    padding: 100px 150px;
+    padding-top: 200px;
+    z-index: -1;
+}
+
+#testimonial h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+#testimonial h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    padding: 25px;
+    background: url('/Images/Testimonial/quotes.png') center center no-repeat;
+}
+
+#testimonial-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#testimonial-main p{
+    color: grey;
+    text-align: center;
+    margin: 0px 50px;
+    margin-bottom: 40px;
+}
+
+#testimonial h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#testimonial button{
+    border: none;
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+}
+
+#testimonial button:hover{
+    color: black;
+}
+
+/* 
+=========================================================================================================================================================================
+                                                                                Others               
+=========================================================================================================================================================================
+*/
+
+#others{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+#others div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+    width: 25%;
+}
+
+.light{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.dark{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#others div p{
+    color: gray;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+#others div button{
+    border: 2px solid rgb(56 53 53);
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 2px 15px;
+    padding-bottom: 3px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+#others div button:hover{
+    background-color: gray;
+    color: white;
+}
